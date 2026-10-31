@@ -92,7 +92,7 @@ Function checkIsGoldRunning
       ${EndIf}
     ${EndIf}
 
-    StrCpy $R0 "gold_daemon.exe gold_data_layer.exe gold_data_layer_http.exe gold_farmer.exe gold_full_node.exe gold_harvester.exe gold_wallet.exe"
+    StrCpy $R0 "gold_daemon.exe gold_data_layer.exe gold_data_layer_http.exe gold_data_layer_s3_plugin.exe gold_farmer.exe gold_full_node.exe gold_harvester.exe gold_wallet.exe gold_timelord.exe gold_timelord_launcher.exe gold_crawler.exe gold_seeder.exe"
     StrCpy $R3 "" ; Accumulator for the names of all running processes
   processLoop:
     ClearErrors

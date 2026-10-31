@@ -749,25 +749,25 @@ function getMenuTemplate() {
         {
           label: i18n._(/* i18n */ { id: 'Gold Blockchain Wiki' }),
           click: () => {
-            openExternal('https://github.com/goldcoin-gl/gold-blockchain/wiki');
+            openExternal('https://github.com/glcoin-network/gold_blockchain/wiki');
           },
         },
         {
           label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
           click: () => {
-            openExternal('https://github.com/goldcoin-gl/gold-blockchain/wiki/FAQ');
+            openExternal('https://github.com/glcoin-network/gold_blockchain/wiki/FAQ');
           },
         },
         {
           label: i18n._(/* i18n */ { id: 'Release Notes' }),
           click: () => {
-            openExternal('https://github.com/goldcoin-gl/gold-blockchain/releases');
+            openExternal('https://github.com/glcoin-network/gold_blockchain/releases');
           },
         },
         {
           label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
           click: () => {
-            openExternal('https://github.com/goldcoin-gl/gold-blockchain/blob/main/CONTRIBUTING.md');
+            openExternal('https://github.com/glcoin-network/gold_blockchain/blob/main/CONTRIBUTING.md');
           },
         },
       ],

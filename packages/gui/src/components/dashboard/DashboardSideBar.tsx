@@ -1,19 +1,14 @@
-import { useLocalStorage } from '@gold-network/api-react';
 import { Flex, SideBarItem, ScrollbarFlex } from '@gold-network/core';
 import {
   Farm as FarmIcon,
   FullNode as FullNodeIcon,
   Harvest as HarvestIcon,
   Plots as PlotsIcon,
-  Pooling as PoolingIcon,
-  NFTs as NFTsIcon,
-  Offers as OffersIcon,
   Tokens as TokensIcon,
   Settings as SettingsIcon,
   Contacts as AddressBookIcon,
   Stake as StakeIcon,
   Recover as RecoverIcon,
-  VC as VCIcon,
 } from '@gold-network/icons';
 import { Trans } from '@lingui/macro';
 import { Box } from '@mui/material';
@@ -37,7 +32,6 @@ export type DashboardSideBarProps = {
 
 export default function DashboardSideBar(props: DashboardSideBarProps) {
   const { simple = false } = props;
-  const [enableVerifiableCredentials] = useLocalStorage<boolean>('enable-verifiable-credentials', true);
 
   return (
     <Flex height="100%" flexDirection="column">
@@ -60,26 +54,6 @@ export default function DashboardSideBar(props: DashboardSideBarProps) {
             icon={RecoverIcon}
             title={<Trans>Recover</Trans>}
             data-testid="DashboardSideBar-recover"
-          />
-          <SideBarItem
-            to="/dashboard/nfts"
-            icon={NFTsIcon}
-            title={<Trans>NFTs</Trans>}
-            data-testid="DashboardSideBar-nfts"
-          />
-          {enableVerifiableCredentials && (
-            <SideBarItem
-              to="/dashboard/vc"
-              icon={VCIcon}
-              title={<Trans>Credentials</Trans>}
-              data-testid="DashboardSideBar-vc"
-            />
-          )}
-          <SideBarItem
-            to="/dashboard/offers"
-            icon={OffersIcon}
-            title={<Trans>Offers</Trans>}
-            data-testid="DashboardSideBar-offers"
           />
           <SideBarItem
             to="/dashboard/addressbook"
@@ -126,12 +100,6 @@ export default function DashboardSideBar(props: DashboardSideBarProps) {
               title={<Trans>Wallets</Trans>}
             />
             */}
-              <SideBarItem
-                to="/dashboard/pool"
-                icon={PoolingIcon}
-                title={<Trans>Pooling</Trans>}
-                data-testid="DashboardSideBar-pooling"
-              />
             </>
           )}
         </Flex>
