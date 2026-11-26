@@ -2,7 +2,10 @@
 !include "nsDialogs.nsh"
 !include "nsProcess.nsh"
 
+!define GOLD_SAFE_PER_USER_MODE_INCLUDE "${__FILEDIR__}\safe-per-user-mode.nsh"
+
 !macro customWelcomePage
+!include "${GOLD_SAFE_PER_USER_MODE_INCLUDE}"
 XPStyle on
 
 Var AlreadyAlerted
@@ -337,4 +340,9 @@ FunctionEnd
 
 ; Section
 ; SectionEnd
+!macroend
+
+!macro customUnWelcomePage
+  !include "${GOLD_SAFE_PER_USER_MODE_INCLUDE}"
+  !insertmacro MUI_UNPAGE_WELCOME
 !macroend

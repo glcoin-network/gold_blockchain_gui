@@ -1,0 +1,12 @@
+{
+  "release": "2.0.6-6",
+  "application_version": "2.0.6",
+  "windows_build_version": "2.0.6.6",
+  "assets": {
+    "packages/gui/src/assets/img/gold.ico": "72d5d12f3847eca7724a81440fb2e815533055de62466b464e42e580cfec5cd0",
+    "packages/gui/src/assets/img/gold64x64.png": "46afde70594f70c9a99c4a178f9495f30e98551c3a9dd39f2b8e22b35c1e8cd4",
+    "packages/gui/src/assets/img/gold.png": "184b13e0aac8e3d279f2ef5df68c5b3fe1cc2938054d9028d2101852f5638101"
+  },
+  "rendered_logo_png_sha256": "056c824cfaa12c85aecfca2c9ad92a2d0cc5fcb593c287e02768f1241a2aacd7",
+  "installer_sha256": "7c391907543149fb490c52fbf222bb54434484751323ed0d6920f6a21ce705d5"
+}
